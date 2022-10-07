@@ -7,14 +7,14 @@ cd ~/r102/openfyde/manifest
 ```bash
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="nodpc"
-    fetch="ssh://git@github.com/nodpc" />
+  <remote name="ycgkwyc"
+    fetch="ssh://git@github.com/ycgkwyc" />
 
   <project path="openfyde/overlays/overlay-amd64-nodpc"
     name="overlay-amd64-nodpc"
     revision="refs/heads/r102-dev"
     groups="fydeos,fydeos_overlays,board"
-    remote="nodpc">
+    remote="ycgkwyc">
     <linkfile src="." dest="src/overlays/overlay-amd64-nodpc" />
   </project>
 
