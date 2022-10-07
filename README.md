@@ -38,7 +38,7 @@ repo sync overlay-amd64-nodpc
 CHROMEOS_KERNEL_CONFIG="/mnt/host/source/src/overlays/overlay-amd64-nodpc/kconfig/fydeos_def_r102_5.4_test"
 USE="${USE} -kernel-4_4 -kernel-4_14 -kernel-5_4 kernel-5_10"
 ```
-# 进入cros
+# 进入cros_sdk
 ```bash
 (inside)
 FEATURES="noclean" cros_workon --board=amd64-nodpc start chromeos-kernel-5_10
