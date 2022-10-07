@@ -31,12 +31,13 @@ This repository contains the following packages:
 <br>
 
 ## About the board `amd64-nodpc`
+About the board amd64-nodpc
 This board targets a generically bootable openFyde image on most Intel-powered x86_64 PC devices, specifically, the device should have:
- - Intel CPUs released on or after the year 2011, specifically, Intel 2nd generation Core™ Processors ["Sandy Bridge"](https://en.wikipedia.org/wiki/Sandy_Bridge_(microarchitecture)) and later
- - Intel Atom, Celeron and Pentium processors released on or after the year 2013, specifically, Intel Atom SoC ["Bay Trail"](https://en.wikipedia.org/wiki/Atom_(system_on_a_chip)) or later
- - Integrated Intel HD graphics
 
- `amd64-openfyde` is the foundation for [FydeOS for PC](https://fydeos.io/download/pc/intel-hd) release.
+Intel CPUs released on or after the year 2011, specifically, Intel 2nd generation Core™ Processors "Sandy Bridge" and later
+Intel Atom, Celeron and Pentium processors released on or after the year 2013, specifically, Intel Atom SoC "Bay Trail" or later
+Integrated Intel HD graphics
+amd64-nodpc is the foundation for FydeOS for PC release.
 
 <br>
 
