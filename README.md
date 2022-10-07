@@ -5,7 +5,7 @@
 cd ~/r102/openfyde/manifest
 创建一个新的xml文件 看起来像下面这样
 
-``bash
+```bash
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="nodpc"
