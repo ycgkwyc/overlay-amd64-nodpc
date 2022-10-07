@@ -1,9 +1,9 @@
 # overlay-amd64-nodpc
 
-# openfyde下怎样创建一个新的board 一下说明针针对r102-dev
+# openfyde下怎样创建一个新的board针对r102-dev
 
 cd ~/r102/openfyde/manifest
-创建一个新的xml文件 看起来像下面这样
+创建一个新的 nodpc.xml 文件 看起来像下面这样
 
 ```bash
 <?xml version="1.0" encoding="UTF-8"?>
