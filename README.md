@@ -21,7 +21,7 @@ cd ~/r102/openfyde/manifest
 </manifest>
 ```
 
-fork到自己的远程仓库并把所有原本overlay-amd64-openfyde文件内所有包径改为overlay-amd64-nodpc 
+fork overlay-amd64-openfyde 到自己的远程仓库并把所有原本文件内所有名字改为overlay-amd64-nodpc 
 
 例如这几个文件里 stable.conf / model.yaml / layout.conf / profile.bashrc 
 
