@@ -31,3 +31,10 @@ fork overlay-amd64-openfyde 到自己的远程仓库并把所有原本文件内�
 repo sync overlay-amd64-nodpc
 ```
 这时候在~/r102/openfyde/overlays内你应该可以看到新的board文件跟你自己的远程仓库内容一致
+
+# 升级内核到V5.10
+```bash
+(inside)
+FEATURES="noclean" cros_workon --board=amd64-openfyde start chromeos-kernel-5_10
+FEATURES="noclean" cros_workon_make --board=amd64-openfyde --install chromeos-kernel-5_10
+```
