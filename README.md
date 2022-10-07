@@ -1,6 +1,4 @@
-# overlay-amd64-nodpc
-
-# openfyde下怎样创建一个新的board针对r102-dev
+# openfyde下怎样创建一个新的board
 
 cd ~/r102/openfyde/manifest
 
