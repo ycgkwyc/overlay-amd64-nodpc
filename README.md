@@ -12,7 +12,7 @@ Each board has a corresponding **overlay** that defines the configuration for it
 <br>
 
 ## About this repository
-This repository is the overlay for the `amd64-openfyde` board, it's part of the openFyde open-source project.
+This repository is the overlay for the `amd64-nodpc` board, it's part of the openFyde open-source project.
 
 This repository contains the following packages:
 
@@ -30,7 +30,7 @@ This repository contains the following packages:
 
 <br>
 
-## About the board `amd64-openfyde`
+## About the board `amd64-nodpc`
 This board targets a generically bootable openFyde image on most Intel-powered x86_64 PC devices, specifically, the device should have:
  - Intel CPUs released on or after the year 2011, specifically, Intel 2nd generation Core™ Processors ["Sandy Bridge"](https://en.wikipedia.org/wiki/Sandy_Bridge_(microarchitecture)) and later
  - Intel Atom, Celeron and Pentium processors released on or after the year 2013, specifically, Intel Atom SoC ["Bay Trail"](https://en.wikipedia.org/wiki/Atom_(system_on_a_chip)) or later
