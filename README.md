@@ -1,6 +1,4 @@
-# overlay-amd64-openfyde
-
-![Logo badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fopenfyde-badge-wivuxrq8xzvh.runkit.sh%2F) ![Release badge](https://img.shields.io/github/v/release/openFyde/overlay-amd64-openfyde?label=latest%20release%20image)
+# overlay-amd64-nodpc
 
 <br>
 
