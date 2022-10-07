@@ -1,4 +1,4 @@
-amd64_openfyde_stack_bashrc() {
+amd64_nodpc_stack_bashrc() {
   local cfg 
 
   cfgd="/mnt/host/source/src/overlays/overlay-amd64-nodpc/${CATEGORY}/${PN}"
@@ -7,7 +7,7 @@ amd64_openfyde_stack_bashrc() {
     [[ -f ${cfg} ]] && . "${cfg}"
   done
 
-  export AMD64_OPENFYDE_BASHRC_FILEPATH="${cfgd}/files"
+  export AMD64_NODPC_BASHRC_FILEPATH="${cfgd}/files"
 }
 
-amd64_openfyde_stack_bashrc
+amd64_nodpc_stack_bashrc
