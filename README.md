@@ -3,7 +3,8 @@
 # openfyde下怎样创建一个新的board针对r102-dev
 
 cd ~/r102/openfyde/manifest
-创建一个新的 nodpc.xml 文件 看起来像下面这样
+
+设置一个自己的远程git仓库，创建一个新的 nodpc.xml 文件 看起来像下面这样
 
 ```bash
 <?xml version="1.0" encoding="UTF-8"?>
@@ -22,6 +23,13 @@ cd ~/r102/openfyde/manifest
 </manifest>
 ```
 
-# 把所有原本overlay-amd64-openfyde文件内所有包径改为overlay-amd64-nodpc 
+fork到自己的远程仓库并把所有原本overlay-amd64-openfyde文件内所有包径改为overlay-amd64-nodpc 
 
-例如这几个文件里 stable.conf / model.yaml / layout.conf / profile.bashrc /
+例如这几个文件里 stable.conf / model.yaml / layout.conf / profile.bashrc 
+
+然后
+```bash
+(outside)
+repo sync overlay-amd64-nodpc
+```
+这时候在~/r102/openfyde/overlays内你应该可以看到新的board文件跟你自己的远程仓库内容一致
