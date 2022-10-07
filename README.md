@@ -41,7 +41,7 @@ USE="${USE} -kernel-4_4 -kernel-4_14 -kernel-5_4 kernel-5_10"
 # 进入cros
 ```bash
 (inside)
-FEATURES="noclean" cros_workon --board=amd64-openfyde start chromeos-kernel-5_10
-FEATURES="noclean" cros_workon_make --board=amd64-openfyde --install chromeos-kernel-5_10
+FEATURES="noclean" cros_workon --board=amd64-nodpc start chromeos-kernel-5_10
+FEATURES="noclean" cros_workon_make --board=amd64-nodpc --install chromeos-kernel-5_10
 ```
 你可能会遇到一些驱动错误提示，根据提示解决即可
