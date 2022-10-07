@@ -1,44 +1,24 @@
 # overlay-amd64-nodpc
 
-<br>
+# openfyde下怎样创建一个新的board 一下说明针针对r102-dev
 
-## Introduction
-Same as Chromium OS, openFyde adopts the [Portage build and packaging system](https://wiki.gentoo.org/wiki/Portage) from Gentoo Linux. openFyde uses Portage with certain customisations to support building multiple targets (bootable OS system images) across different hardware architectures from a shared set of sources.
+cd ~/r102/openfyde/manifest
+创建一个新的xml文件 看起来像下面这样
 
-A **board** defines a target type, it can be either for a family of hardware devices or specifically for one type of device. For example, The board `amd64-openfyde` is a target type for an openFyde system image that aims to run on most recent PCs with amd64(x86_64) architecture; whilst the `rpi4-openfyde` board is a target type specifically for the infamous single-board computer [Raspberry Pi 4B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/). We usually append `-openfyde` to the board name in openFyde to differentiate between its siblings for FydeOS. 
+``bash
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="nodpc"
+    fetch="ssh://git@github.com/nodpc" />
 
-Each board has a corresponding **overlay** that defines the configuration for it. This includes details like CPU architecture, kernel configuration, as well as additional packages and USE flags.
+  <project path="openfyde/overlays/overlay-amd64-nodpc"
+    name="overlay-amd64-nodpc"
+    revision="refs/heads/r102-dev"
+    groups="fydeos,fydeos_overlays,board"
+    remote="nodpc">
+    <linkfile src="." dest="src/overlays/overlay-amd64-nodpc" />
+  </project>
 
-<br>
+</manifest>
+```
 
-## About this repository
-This repository is the overlay for the `amd64-nodpc` board, it's part of the openFyde open-source project.
-
-This repository contains the following packages:
-
-| Packages                          | Description                               | Reference                                                                                                                                         |
-|-----------------------------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| chromeos-base/device-appid        | Setup device appid                        |                                                                                                                                                   |
-| chromeos-base/amd64-openfyde-spec | amd64-openfyde board setup                |                                                                                                                                                   |
-| media-libs/lpe-support-blacklist  | Files used to support/configure LPE Audio | [chromiumos-overlay](https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/refs/heads/main/media-libs/lpe-support-blacklist) |
-| virtual/fydeos-board-spec         | Virtual for fydeos board setup            |                                                                                                                                                   |
-| virtual/fydeos-board-spec-dev     | Virtual for fydeos dev board setup        |                                                                                                                                                   |
-| virtual/openfyde-board-spec       | Virtual for openfyde board setup          |                                                                                                                                                   |
-| virtual/arc-camera3-hal-configs   | sunplus camera config                     |                                                                                                                                                   |
-| virtual/arc-camera3-hal           | cros usb camera hal                       |                                                                                                                                                   |
-
-
-<br>
-
-## About the board `amd64-nodpc`
-About the board amd64-nodpc
-This board targets a generically bootable openFyde image on most Intel-powered x86_64 PC devices, specifically, the device should have:
-
-Intel CPUs released on or after the year 2011, specifically, Intel 2nd generation Core™ Processors "Sandy Bridge" and later
-Intel Atom, Celeron and Pentium processors released on or after the year 2013, specifically, Intel Atom SoC "Bay Trail" or later
-Integrated Intel HD graphics
-amd64-nodpc is the foundation for FydeOS for PC release.
-
-<br>
-
-###### Copyright (c) 2022 Fyde Innovations and the openFyde Authors. Distributed under the license specified in the root directory of this repository.
