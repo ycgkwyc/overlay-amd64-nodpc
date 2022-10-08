@@ -21,7 +21,7 @@ cd ~/r102/openfyde/manifest
 </manifest>
 ```
 
-fork overlay-amd64-openfyde 到自己的远程仓库并把所有原本文件内所有名字改为overlay-amd64-nodpc 
+fork overlay-amd64-openfyde 到自己的远程仓库并把所有原本文件内所有名字改为 overlay-amd64-nodpc 
 
 例如这几个文件里 stable.conf / model.yaml / layout.conf / profile.bashrc 
 
@@ -44,7 +44,7 @@ USE="${USE} -kernel-4_4 -kernel-4_14 -kernel-5_4 kernel-5_10"
 FEATURES="noclean" cros_workon --board=amd64-nodpc start chromeos-kernel-5_10
 FEATURES="noclean" cros_workon_make --board=amd64-nodpc --install chromeos-kernel-5_10
 ```
-你可能会遇到一些驱动错误提示，根据提示解决即可
+你可能会遇到一些驱动错误提示，根据提示解决即可 一般通过自己编写补丁文件放入自己的板下
 
 ```bash
 (inside)
