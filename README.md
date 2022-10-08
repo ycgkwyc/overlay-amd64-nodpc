@@ -32,6 +32,10 @@ repo sync overlay-amd64-nodpc
 ```
 这时候在~/r102/openfyde/overlays内你应该可以看到新的board文件跟你自己的远程仓库内容一致
 
+# 软链接新board
+```bash
+ln -snfr ~/r102/openfyde/overlays/overlay-amd64-nodpc ~/r102/src/overlays
+```
 # 升级内核到V5.10
 修改 stable.conf 文件
 ```bash
