@@ -45,3 +45,27 @@ FEATURES="noclean" cros_workon --board=amd64-nodpc start chromeos-kernel-5_10
 FEATURES="noclean" cros_workon_make --board=amd64-nodpc --install chromeos-kernel-5_10
 ```
 你可能会遇到一些驱动错误提示，根据提示解决即可
+
+```bash
+(inside)
+$ setup_board --board=amd64-nodpc --force
+```
+Install package dev-libs/capnproto
+```bash
+(inside)
+sudo emerge capnproto
+```
+# Build packages
+```bash
+(inside)
+$ ./build_packages --board=amd64-nodpc --nowithautotest --autosetgov --nouse_any_chrome
+```
+# Build the disk image
+```bash
+(inside)
+$ ./build_image --board=amd64-nodpc --noenable_rootfs_verification
+```
+The disk image is usually named chromiumos_image.bin, under the abovementioned directory. So full path to the latest image is
+```bash
+~/r102/src/build/images/amd64-openfyde/latest/chromiumos_image.bin
+```
