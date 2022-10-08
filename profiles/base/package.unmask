@@ -1,0 +1,11 @@
+~sys-kernel/chromeos-kernel-5_10/01-sensor-accel.patch
+~sys-kernel/chromeos-kernel-5_10/02-usb-btusb.patch
+~sys-kernel/chromeos-kernel-5_10/03-hid_devices.patch
+~sys-kernel/chromeos-kernel-5_10/05-for-old-intel-graphic.patch
+~sys-kernel/chromeos-kernel-5_10/06-goodix-pen.patch
+~sys-kernel/chromeos-kernel-5_10/08-ath-wireless-for-kr.patch
+~sys-kernel/chromeos-kernel-5_10/09-intel-tablet-mode.patch
+~sys-kernel/chromeos-kernel-5_10/10-add-lenovo-keyboard.patch
+~sys-kernel/chromeos-kernel-5_10/11-overlayfs.patch
+~sys-kernel/chromeos-kernel-5_10/12-knote5-touchscrean.patch
+~sys-kernel/chromeos-kernel-5_10/14-iwlwifi-bump-FW-API-to-62-for-AX-devices.patch
