@@ -59,7 +59,13 @@ FEATURES="noclean" cros_workon_make --board=amd64-nodpc --install chromeos-kerne
 sudo apt-get update
 sudo apt-get install quilt
 ```
-
+```bash
+quilt add 监督出错的patch档案
+```
+修改档案后
+```bash
+quilt refresh产生patch
+```
 Install package dev-libs/capnproto
 ```bash
 (inside)
