@@ -73,12 +73,12 @@ Install package dev-libs/capnproto
 (inside)
 sudo emerge capnproto
 ```
-# Build packages
+# 构建包
 ```bash
 (inside)
 $ ./build_packages --board=amd64-nodpc --nowithautotest --autosetgov --nouse_any_chrome
 ```
-# Build the disk image
+# 构建磁盘映像
 ```bash
 (inside)
 $ ./build_image --board=amd64-nodpc --noenable_rootfs_verification
