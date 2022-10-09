@@ -53,7 +53,12 @@ $ setup_board --board=amd64-nodpc --force
 FEATURES="noclean" cros_workon --board=amd64-nodpc start chromeos-kernel-5_10
 FEATURES="noclean" cros_workon_make --board=amd64-nodpc --install chromeos-kernel-5_10
 ```
-你可能会遇到一些驱动错误提示，根据提示解决即可 一般通过自己编写补丁文件放入自己的板下
+你可能会遇到一些透過patch驱动错误提示，根据提示解决即可 一般通过自己编写补丁文件放入自己的板下例如通过 quilt来管理patch
+
+```bash
+sudo apt-get update
+sudo apt-get install quilt
+```
 
 Install package dev-libs/capnproto
 ```bash
