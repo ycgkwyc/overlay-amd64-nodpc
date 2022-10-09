@@ -67,6 +67,7 @@ quilt add
 ```bash
 quilt refresh 
 ```
+# 安装 capnproto 加快编译速度
 Install package dev-libs/capnproto
 ```bash
 (inside)
