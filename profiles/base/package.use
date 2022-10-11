@@ -18,3 +18,4 @@ sys-kernel/linux-firmware savedconfig
 x11-libs/libva intel_ihd_pavp
 #virtual/lpe-support skl_lpe apl_lpe kbl_lpe cnl_lpe glk_lpe
 sys-libs/ncurses unicode
+chromeos-base/chromeos-chrome -chrome_debug chrome_media vaapi x264 x265 widevine
